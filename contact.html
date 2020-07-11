@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <title>Linda's Portfolio</title>
-    
+
     <!-- favicon to be added when created -->
-    <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/Worldfavicon.png" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -14,8 +15,8 @@
 
 <body>
 
-<<header class="page-header">
-    <img src="img/LGlogo.png" alt="Personal logo of Linda Graham" class="page-header__item">
+<header class="page-header">
+  <img src="img/finallogo.png" alt="Personal logo of Linda Graham" class="page-header__item" width=350 height=300>
     <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
             <li role="presentation">
@@ -24,7 +25,7 @@
             <li role="presentation">
                 <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
             </li>
-            <li role="presentation">  
+            <li role="presentation">
                 <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
             </li>
             <li role="presentation">
@@ -34,31 +35,51 @@
     </nav>
 </header>
 
-<div class=contact1>
+<div role=main class=wrapper>
 
-<h1>Contact</h1>
+  <div class="wrapper_item" id="contact-copy">
+    <h1> Contact </h1>
+  <p>
+    If you have an questions regarding my portfolio, please feel free to contact me.
+  </p>
+  </div>
 
-<form action="" method="post" id="contact-form">
-    <label class="standard-label" for="contact email"> Email: </label>
-    <input type="email" pattern="[a-z0-9]+\@[a-z0-9]+\.[a-z0-9]" required> <br>
-    <br>
-  
-    <label class="standard-label"for="contact telephone number">Telephone: </label>
-    <input type="tel"pattern="\d{3}[\-]\d{3}[\-]\d{4}"> <br>
-    <br>
-    <label class="standard-label"for="optional message">Message: </label><br>
-    <textarea maxlength="240" required></textarea> <br>
-    <br>
-    <input type="submit" value="Send message">
+  <form class="wrapper_item" id="contact-form">
+      <fieldset name="submit comment">
+        <h2> Send me a message </h2>
+        <label class="standard label" for="email">
+        <b> Email: </b>
+        </label>
+        <input type="email" id="email" required placeholder="example@domain.com"> <br>
+        <br>
+        <label class="standard-label" for="phone">
+          <br> Telephone: <br>
+        </label>
+        <input type="tel" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required placeholder="ex: 061 234 5678">
+        <br>
+        <label class="standard-label" for="message">
+        <br> Message: <br>
+      </label>
+        <textarea maxlength="240" id="message" required placeholder="Add message here"></textarea>
+        <input type="submit" id=submit required value="Send message" placeholder="Add message here">
+        </fieldset>
   </form>
 
+  <div class="wrapper_item" id="contact">
+    <h2> Reach me by phone </h2>
+  <p>
+    <a href="tel:+41466960586" aria-label="Call Linda Graham" target="_blank">Tel:+61466660586</a> <br>
+    <a href="skype:.cid.4847e79b772d3f8" aria-label="Skype Linda Graham" target="_blank">hello.lindagraham</a>
+  </p>
+  </div>
 
-<div>
-    <a href="mailto:lindamgraham2019@gmail.com">Contact me</a><br>
-    <a href="tel:+41466960586">Tel +61 46 6960 586</a><br>
-    <a href="mailto:lindamgraham2019@gmail.com">lindamgraham2019@gmail.com</a><br>
-    <a href="skype:.cid.4847e79b772d3f8">Skype Linda Graham</a>
-</div>
+  <div class="wrapper_item" id="address">
+    <h2> Find me online </h2>
+  <p>
+    <a href="mailto:lindamgraham2019@gmail.com" aria-label="Email Linda Graham" target="_blank">lindamgraham2019@gmail.com</a><br>
+    <a href="mailto:lindamgraham2019@gmail.com" aria-label="Send email to Linda Graham" target="_blank">Send me an email</a><br>
+  </p>
+  </div>
 
 </div>
 
